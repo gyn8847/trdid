@@ -2,8 +2,6 @@
 
 <?php
  	session_start();
-	$techstate = "Ancient";
-	$event = "";
  	if (!isset ($_SESSION["year"])) {
  	$_SESSION["year"] = 0;
  	}
@@ -24,6 +22,14 @@
  	$_SESSION["tech"] = 0;
  	}
  	$tech = $_SESSION["tech"];
+	if (!isset ($_SESSION["techstate"])) {
+ 	$_SESSION["techstate"] = "Ancient";
+ 	}
+ 	$techstate = $_SESSION["techstate"];
+	if (!isset ($_SESSION["event"])) {
+ 	$_SESSION["event"] = "Ancient";
+ 	}
+ 	$event = $_SESSION["event"];
 ?>
 
 <html>
