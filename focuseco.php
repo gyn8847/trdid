@@ -21,7 +21,7 @@
 	$mil = floor($mil);
 	$_SESSION["mil"] = $mil;
   
-	$eco = $eco + $tech + rand(1,(7+sqrt($tech/1000)))) - ($pop / 2500);
+	$eco = $eco + $tech + rand(1,(7+sqrt($tech/1000))) - ($pop / 2500);
 	$eco = floor($eco);
 	if ($eco < 2){
 	$eco == 2;
