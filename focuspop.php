@@ -74,7 +74,7 @@
 	$techstate = "Copper Age";
 	$_SESSION["techstate"] = $techstate;
 	}
-	else($tech >= 500){
+	elseif($tech >= 500){
 	$techstate = $_SESSION["techstate"];
 	$techstate = "Neolithic Age";
 	$_SESSION["techstate"] = $techstate;
