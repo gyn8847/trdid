@@ -3,6 +3,7 @@
 <?php
  	session_start();
 	$techstate = "Ancient";
+	$event = "";
  	if (!isset ($_SESSION["year"])) {
  	$_SESSION["year"] = 0;
  	}
