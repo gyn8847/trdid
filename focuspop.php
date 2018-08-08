@@ -11,7 +11,7 @@
 	$_SESSION["pop"] = $pop;
 
 	$mil = $_SESSION["mil"];
-	$mil = $mil + rand(0,1) + ($pop / 5000);
+	$mil = $mil + rand(0,1) + ($pop / 30000);
 	$mil = floor($mil);
 	$_SESSION["mil"] = $mil;
 
