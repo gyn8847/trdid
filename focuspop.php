@@ -16,8 +16,10 @@
 	$_SESSION["mil"] = $mil;
 
 	$eco = $_SESSION["eco"];
-	$eco = $eco + $tech + rand(1,3) - ($pop / 5000);
+	$eco = $eco + $tech + rand(1,4) - ($pop / 5000);
 	$eco = floor($eco);
+	if ($eco < 1){
+	}
 	$_SESSION["eco"] = $eco;
 
 	$tech = $_SESSION["tech"];
