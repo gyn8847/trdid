@@ -17,7 +17,7 @@
  	}
  	$mil = $_SESSION["mil"];
 	if (!isset ($_SESSION["eco"])) {
- 	$_SESSION["eco"] = 0;
+ 	$_SESSION["eco"] = 10;
  	}
  	$eco = $_SESSION["eco"];
 	if (!isset ($_SESSION["tech"])) {
