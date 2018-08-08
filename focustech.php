@@ -19,7 +19,7 @@
 	$mil = floor($mil);
 	$_SESSION["mil"] = $mil;
   
-	$eco = $eco + $tech + rand(1,(4+($tech))) - ($pop / 5000);
+	$eco = $eco + $tech + rand(1,(4+sqrt($tech))) - ($pop / 5000);
 	$eco = floor($eco);
 	if ($eco < 2){
 	$eco == 2;
@@ -75,7 +75,7 @@
 	$techstate = "Copper Age";
 	$_SESSION["techstate"] = $techstate;
 	}
-	else($tech >= 500){
+	elseif($tech >= 500){
 	$techstate = $_SESSION["techstate"];
 	$techstate = "Neolithic Age";
 	$_SESSION["techstate"] = $techstate;
