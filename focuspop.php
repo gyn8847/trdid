@@ -1,5 +1,6 @@
 <?php
 	session_start();
+
 	$year = $_SESSION["year"];
 	$pop = $_SESSION["pop"];
 	$mil = $_SESSION["mil"];
@@ -79,7 +80,7 @@
 	$techstate = "Neolithic Age";
 	$_SESSION["techstate"] = $techstate;
 	}
-	else($tech >= 0){
+	else{
 	$techstate = $_SESSION["techstate"];
 	$techstate = "Prehistoric Age";
 	$_SESSION["techstate"] = $techstate;
