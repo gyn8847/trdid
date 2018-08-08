@@ -80,7 +80,7 @@
 	$techstate = "Neolithic Age";
 	$_SESSION["techstate"] = $techstate;
 	}
-	else($tech >= 0){
+	else{
 	$techstate = $_SESSION["techstate"];
 	$techstate = "Prehistoric Age";
 	$_SESSION["techstate"] = $techstate;
