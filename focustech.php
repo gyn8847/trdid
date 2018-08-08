@@ -28,7 +28,7 @@
 	$tech = floor($tech);
 	$_SESSION["tech"] = $tech;
 
-	elseif($tech >= 50000){
+	if($tech >= 50000){
 	$techstate = $_SESSION["techstate"];
 	$techstate = "Futuristic";
 	$_SESSION["tech"] = $techstate;
