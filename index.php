@@ -13,7 +13,7 @@
  	}
  	$pop = $_SESSION["pop"];
 	if (!isset ($_SESSION["mil"])) {
- 	$_SESSION["mil"] = 0;
+ 	$_SESSION["mil"] = 50;
  	}
  	$mil = $_SESSION["mil"];
 	if (!isset ($_SESSION["eco"])) {
