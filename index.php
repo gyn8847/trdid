@@ -39,10 +39,10 @@
    echo "<p>GDP per capita: $eco</p>";
    echo "<p>Your tech level is: $techstate</p>";
 	?>
-<p><a href="popfocus.php">Focus Population</a></p>
-<p><a href="milfocus.php">Focus Soldiers</a></p>
-<p><a href="ecofocus.php">Focus Economy</a></p>
-<p><a href="techfocus.php">Focus Technology</a></p>
+<p><a href="focuspop.php">Focus Population</a></p>
+<p><a href="focusmil.php">Focus Soldiers</a></p>
+<p><a href="focuseco.php">Focus Economy</a></p>
+<p><a href="focustech.php">Focus Technology</a></p>
  
 </body>
  
