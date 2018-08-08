@@ -2,6 +2,6 @@
 	session_start();
 	$pop = $_SESSION["pop"];
 	$pop++;
-	$_SESSION["number"] = $pop;
-	header("location:number.php");
+	$_SESSION["pop"] = $pop;
+	header("location:index.php");
 ?>
