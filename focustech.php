@@ -27,6 +27,52 @@
 	$tech = $tech + ($eco / 50);
 	$tech = floor($tech);
 	$_SESSION["tech"] = $tech;
+
+	elseif($tech >= 50000){
+	$techstate = $_SESSION["techstate"];
+	$techstate = "Futuristic";
+	$_SESSION["tech"] = $techstate;
+	}
+	elseif($tech >= 25000){
+	$techstate = $_SESSION["techstate"];
+	$techstate = "Space Age";
+	$_SESSION["techstate"] = $techstate;
+	}
+	elseif($tech >= 15000){
+	$techstate = $_SESSION["techstate"];
+	$techstate = "Modern Age";
+	$_SESSION["techstate"] = $techstate;
+	}
+	elseif($tech >= 5000){
+	$techstate = $_SESSION["techstate"];
+	$techstate = "Industrial Age";
+	$_SESSION["techstate"] = $techstate;
+	}
+	elseif($tech >= 2000){
+	$techstate = $_SESSION["techstate"];
+	$techstate = "Exploration Age";
+	$_SESSION["techstate"] = $techstate;
+	}
+	elseif($tech >= 1000){
+	$techstate = $_SESSION["techstate"];
+	$techstate = "Medieval Age";
+	$_SESSION["techstate"] = $techstate;
+	}
+	elseif($tech >= 500){
+	$techstate = $_SESSION["techstate"];
+	$techstate = "Iron Age";
+	$_SESSION["techstate"] = $techstate;
+	}
+	elseif($tech >= 200){
+	$techstate = $_SESSION["techstate"];
+	$techstate = "Bronze Age";
+	$_SESSION["techstate"] = $techstate;
+	}
+	elseif($tech >= 100){
+	$techstate = $_SESSION["techstate"];
+	$techstate = "Copper Age";
+	$_SESSION["techstate"] = $techstate;
+	}
   
 	header("location:index.php");
 ?>
