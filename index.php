@@ -31,9 +31,9 @@
 <title>Page Title</title>
 </head>
 <body>
-<p>$event</p>
 <?php
    echo "<p>The year is: $year</p></br>";
+   echo "<p>$event</p></br>";
    echo "<p>Population: $pop</p>";
    echo "<p>Soldiers: $mil</p>";
    echo "<p>GDP per capita: $eco</p>";
