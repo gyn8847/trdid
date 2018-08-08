@@ -13,9 +13,19 @@
 <title>Page Title</title>
 </head>
 <body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
+<p>$event</p>
+<?php
+   echo "<p>The year is: $num</p></br>";
+ 		echo "<p>Population: $num</p>";
+   echo "<p>Soldiers: $num</p>";
+   echo "<p>GDP per capita: $num</p>";
+   echo "<p>Your tech level is: $num</p>";
+	?>
+<p><a href="popfocus.php">Focus Population</a></p>
+<p><a href="milfocus.php">Focus Soldiers</a></p>
+<p><a href="ecofocus.php">Focus Economy</a></p>
+<p><a href="techfocus.php">Focus Technology</a></p>
+ 
 </body>
+ 
 </html>
