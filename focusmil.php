@@ -1,5 +1,6 @@
 <?php
 	session_start();
+
   	$year = $_SESSION["year"];
 	$pop = $_SESSION["pop"];
 	$mil = $_SESSION["mil"];
