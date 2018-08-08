@@ -1,5 +1,4 @@
 <?php
-
 	session_start();
   	$year = $_SESSION["year"];
 	$pop = $_SESSION["pop"];
