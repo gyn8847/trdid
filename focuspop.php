@@ -18,7 +18,8 @@
 	$eco = $_SESSION["eco"];
 	$eco = $eco + $tech + rand(1,4) - ($pop / 5000);
 	$eco = floor($eco);
-	if ($eco < 1){
+	if ($eco < 2){
+	$eco == 2;
 	}
 	$_SESSION["eco"] = $eco;
 
