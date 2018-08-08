@@ -11,7 +11,7 @@
 	$year = floor($year);
 	$_SESSION["year"] = $year;
 
-	$pop = $pop + rand(5,20) + ($pop / 1000);
+	$pop = $pop + rand(5,20+(sqrt($tech)) + ($pop / 1000);
 	$pop = floor($pop);
 	$_SESSION["pop"] = $pop;
 
@@ -19,7 +19,7 @@
 	$mil = floor($mil);
 	$_SESSION["mil"] = $mil;
 
-	$eco = $eco + $tech + rand(1,(4+sqrt($tech))) - ($pop / 5000);
+	$eco = $eco + $tech + rand(1,(4+sqrt(sqrt($tech)))) - ($pop / 5000);
 	$eco = floor($eco);
 	if ($eco < 2){
 	$eco == 2;
