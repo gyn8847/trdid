@@ -27,7 +27,7 @@
  	}
  	$techstate = $_SESSION["techstate"];
 	if (!isset ($_SESSION["event"])) {
- 	$_SESSION["event"] = "Ancient";
+ 	$_SESSION["event"] = "Prehistoric Age";
  	}
  	$event = $_SESSION["event"];
 ?>
