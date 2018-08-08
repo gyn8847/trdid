@@ -11,7 +11,7 @@
 	$year = floor($year);
 	$_SESSION["year"] = $year;
 
-	$pop = $pop + rand(5,20) + ($pop / 1000);
+	$pop = $pop + rand(5,20) + ($pop / 500);
 	$pop = floor($pop);
 	$_SESSION["pop"] = $pop;
 
