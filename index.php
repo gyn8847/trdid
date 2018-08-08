@@ -43,6 +43,7 @@
 <p><a href="focusmil.php">Focus Soldiers</a></p>
 <p><a href="focuseco.php">Focus Economy</a></p>
 <p><a href="focustech.php">Focus Technology</a></p>
+</br></br></br><p><a href="newgame.php">Restart</a></p>
  
 </body>
  
