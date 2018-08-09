@@ -22,6 +22,26 @@
  	$_SESSION["tech"] = 0;
  	}	
  	$tech = $_SESSION["tech"];
+	if (!isset ($_SESSION["civpoints"])) {
+ 	$_SESSION["civpoints"] = 0;
+ 	}	
+ 	$civpoints = $_SESSION["civpoints"];
+	if (!isset ($_SESSION["civpointpop"])) {
+ 	$_SESSION["civpointpop"] = 0;
+ 	}	
+ 	$civpointpop = $_SESSION["civpointpop"];
+	if (!isset ($_SESSION["civpointmil"])) {
+ 	$_SESSION["civpointmil"] = 0;
+ 	}	
+ 	$civpointmil = $_SESSION["civpointmil"];
+	if (!isset ($_SESSION["civpointeco"])) {
+ 	$_SESSION["civpointeco"] = 0;
+ 	}	
+ 	$civpointeco = $_SESSION["civpointeco"];
+	if (!isset ($_SESSION["civpointtech"])) {
+ 	$_SESSION["civpointtech"] = 0;
+ 	}	
+ 	$tech = $_SESSION["civpointtech"];
 	if (!isset ($_SESSION["techstate"])) {
  	$_SESSION["techstate"] = "Prehistoric Age";
  	}
