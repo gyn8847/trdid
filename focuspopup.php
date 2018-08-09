@@ -3,7 +3,7 @@
   
   $civpointpop = $_SESSION["civpointpop"];
   $civpoints = $_SESSION["civpoints"];
-  if(civpoints >= 1){
+  if($civpoints >= 1){
   $civpoints--;
   $civpointpop++;
   }
