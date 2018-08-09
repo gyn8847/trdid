@@ -49,7 +49,7 @@
 <p>Military Focus:<a href="focusmil.php"></a></p>
 <p>Economy Focus:<a href="focuseco.php"></a></p>
 <p>Technology Focus:<a href="focustech.php"></a></p>
-<p>Technology Focus:<a href="focus.php"></a></p>
+<p>Next Turn:<a href="focus.php"></a></p>
 <form action="focus.php">
        <input type="submit" value="Next Turn">
 </form>	
