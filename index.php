@@ -22,12 +22,12 @@
  	$_SESSION["tech"] = 0;
  	}
  	$tech = $_SESSION["tech"];
-	if (!isset ($_SESSION["tech"])) {
- 	$_SESSION["tech"] = "Prehistoric Age";
+	if (!isset ($_SESSION["techstate"])) {
+ 	$_SESSION["techstate"] = "Prehistoric Age";
  	}
  	$techstate = $_SESSION["techstate"];
 	if (!isset ($_SESSION["event"])) {
- 	$_SESSION["event"] = "Alpha test v0.01";
+ 	$_SESSION["event"] = "Alpha test v0.02";
  	}
  	$event = $_SESSION["event"];
 ?>
