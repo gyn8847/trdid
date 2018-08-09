@@ -27,7 +27,7 @@
  	}
  	$techstate = $_SESSION["techstate"];
 	if (!isset ($_SESSION["event"])) {
- 	$_SESSION["event"] = "Alpha test v0.03";
+ 	$_SESSION["event"] = "Alpha test v0.0.3";
  	}
  	$event = $_SESSION["event"];
 ?>
