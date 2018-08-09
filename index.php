@@ -81,6 +81,7 @@
 ?>
    <form action="focustechdown.php"><input type="submit" value="-point"></form><form action="focustechup.php"><input type="submit" value="+point"></form>
 
+<br/>
 <form action="focus.php">
        <input type="submit" value="Next Turn">
 </form>	
