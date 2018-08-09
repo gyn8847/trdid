@@ -45,11 +45,11 @@
    echo "<p>GDP per capita: $eco</p>";
    echo "<p>Your tech level is: $techstate</p>";
 ?>
-<p>Population Focus:<a href="focuspop.php"></a></p>
-<p>Military Focus:<a href="focusmil.php"></a></p>
-<p>Economy Focus:<a href="focuseco.php"></a></p>
-<p>Technology Focus:<a href="focustech.php"></a></p>
-<p>Next Turn:<a href="focus.php"></a></p>
+<p>Population Focus:<a href="focuspop.php">o</a></p>
+<p>Military Focus:<a href="focusmil.php">o</a></p>
+<p>Economy Focus:<a href="focuseco.php">o</a></p>
+<p>Technology Focus:<a href="focustech.php">o</a></p>
+<p>Next Turn:<a href="focus.php">o</a></p>
 <form action="focus.php">
        <input type="submit" value="Next Turn">
 </form>	
