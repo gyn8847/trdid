@@ -27,7 +27,7 @@
  	}
  	$techstate = $_SESSION["techstate"];
 	if (!isset ($_SESSION["event"])) {
- 	$_SESSION["event"] = "Alpha test v0.02";
+ 	$_SESSION["event"] = "Alpha test v0.03";
  	}
  	$event = $_SESSION["event"];
 ?>
@@ -44,12 +44,14 @@
    echo "<p>Soldiers: $mil</p>";
    echo "<p>GDP per capita: $eco</p>";
    echo "<p>Your tech level is: $techstate</p>";
-	?>
+?>
 <p>Population Focus:<a href="focuspop.php"></a></p>
 <p>Military Focus:<a href="focusmil.php"></a></p>
 <p>Economy Focus:<a href="focuseco.php"></a></p>
 <p>Technology Focus:<a href="focustech.php"></a></p>
-<p>Next Turn:<a href="focus.php"></a></p>	
+<form action="focus.php">
+       <input type="submit" value="Next Turn">
+     </form>	
 </br></br></br><p><a href="newgame.php">Restart</a></p>
  
 </body>
