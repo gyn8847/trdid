@@ -51,7 +51,7 @@
 <p>Technology Focus:<a href="focustech.php"></a></p>
 <form action="focus.php">
        <input type="submit" value="Next Turn">
-     </form>	
+</form>	
 </br></br></br><p><a href="newgame.php">Restart</a></p>
  
 </body>
