@@ -45,10 +45,11 @@
    echo "<p>GDP per capita: $eco</p>";
    echo "<p>Your tech level is: $techstate</p>";
 	?>
-<p><a href="focuspop.php">Focus Population</a></p>
-<p><a href="focusmil.php">Focus Soldiers</a></p>
-<p><a href="focuseco.php">Focus Economy</a></p>
-<p><a href="focustech.php">Focus Technology</a></p>
+<p>Population Focus:<a href="focuspop.php"></a></p>
+<p>Military Focus:<a href="focusmil.php"></a></p>
+<p>Economy Focus:<a href="focuseco.php"></a></p>
+<p>Technology Focus:<a href="focustech.php"></a></p>
+<p>Next Turn:<a href="focus.php"></a></p>	
 </br></br></br><p><a href="newgame.php">Restart</a></p>
  
 </body>
