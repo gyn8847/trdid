@@ -20,21 +20,21 @@
  	$eco = $_SESSION["eco"];
 	if (!isset ($_SESSION["tech"])) {
  	$_SESSION["tech"] = 0;
- 	}
+ 	}	
  	$tech = $_SESSION["tech"];
 	if (!isset ($_SESSION["techstate"])) {
  	$_SESSION["techstate"] = "Prehistoric Age";
  	}
  	$techstate = $_SESSION["techstate"];
 	if (!isset ($_SESSION["event"])) {
- 	$_SESSION["event"] = "Alpha test v0.04";
+ 	$_SESSION["event"] = "Alpha test v0.05";
  	}
  	$event = $_SESSION["event"];
 ?>
 
 <html>
 <head>
-<title>Page Title</title>
+<title>NationSim1998</title>
 </head>
 <body>
 <?php
@@ -44,12 +44,17 @@
    echo "<p>Soldiers: $mil</p>";
    echo "<p>GDP per capita: $eco</p>";
    echo "<p>Your tech level is: $techstate</p>";
+   echo "<p><br/>You have $civpoints assignable points</p>";
+   echo "<p>Population Focus: $civpointpop
+   </a><form action="focuspopdown.php"><input type="submit" value="-point"></form><form action="focuspopup.php"><input type="submit" value="+point"></form></p>";
+   echo "<p>Military Focus: $civpointmil
+   </a><form action="focusmildown.php"><input type="submit" value="-point"></form><form action="focusmilup.php"><input type="submit" value="+point"></form></p>";
+   echo "<p>Economy Focus: $civpointeco
+   </a><form action="focusecodown.php"><input type="submit" value="-point"></form><form action="focusecoup.php"><input type="submit" value="+point"></form></p>";
+   echo "<p>Technology Focus: $civpointtech
+   </a><form action="focustechdown.php"><input type="submit" value="-point"></form><form action="focustechup.php"><input type="submit" value="+point"></form></p>";
 ?>
-<p>Population Focus:<a href="focuspop.php">o</a></p>
-<p>Military Focus:<a href="focusmil.php">o</a></p>
-<p>Economy Focus:<a href="focuseco.php">o</a></p>
-<p>Technology Focus:<a href="focustech.php">o</a></p>
-<p>Next Turn:<a href="focus.php">o</a></p>
+
 <form action="focus.php">
        <input type="submit" value="Next Turn">
 </form>	
