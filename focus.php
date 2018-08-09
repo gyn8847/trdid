@@ -19,7 +19,7 @@
 	$mil = floor($mil);
 	$_SESSION["mil"] = $mil;
   
-	/*$techstatescore = 1;
+	$techstatescore = 1;
 	if ($techstate = "Prehistoric Age"){
 	}
 	elseif ($techstate = "Neolithic Age"){
@@ -30,9 +30,9 @@
 	}
 	elseif ($techstate = "Bronze Age"){
 		$techstatescore = $techstatescore + 3;
-	}*/
+	}
 
-	$eco = $eco + $tech + rand(1,(4+($techstatescore)) - ($pop / 5000);
+	$eco = $eco + $tech + rand(1,(4+($techstatescore))) - ($pop / 5000);
 	$eco = floor($eco);
 	if ($eco < 2){
 	$eco == 2;
