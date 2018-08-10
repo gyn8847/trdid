@@ -15,7 +15,7 @@
  	}
  	$mil = $_SESSION["mil"];
 	if (!isset ($_SESSION["eco"])) {
- 	$_SESSION["eco"] = 10;
+ 	$_SESSION["eco"] = 50;
  	}
  	$eco = $_SESSION["eco"];
 	if (!isset ($_SESSION["tech"])) {
@@ -41,7 +41,7 @@
 	if (!isset ($_SESSION["civpointtech"])) {
  	$_SESSION["civpointtech"] = 0;
  	}	
- 	$tech = $_SESSION["civpointtech"];
+ 	$civpointtech = $_SESSION["civpointtech"];
 	if (!isset ($_SESSION["techstate"])) {
  	$_SESSION["techstate"] = "Prehistoric Age";
  	}
