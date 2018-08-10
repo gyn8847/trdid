@@ -100,7 +100,7 @@ var x = setInterval(function() {
     var now = new Date().getTime();
     
     // Find the distance between now and the count down date
-    var distance = startpoint - now;
+    var distance = now - startpoint;
     
     // Time calculations for days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -113,10 +113,10 @@ var x = setInterval(function() {
     + minutes + "m " + seconds + "s ";
     
     // If the count down is over, write some text 
-    //if (distance < 0) {
-    //    clearInterval(x);
-    //    document.getElementById("demo").innerHTML = "EXPIRED";
-    //}
+    if (distance % 30) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
 }, 1000);
 </script>
 
