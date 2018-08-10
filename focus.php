@@ -23,7 +23,7 @@
 	$mil = floor($mil);
 	$_SESSION["mil"] = $mil;
   
-	$eco = $eco + $tech + rand(1,(4+($civpointeco))) - ($pop / (5000+($tech*10)));
+	$eco = $eco + rand(1,(4+($civpointeco))) - ($pop / (5000+($tech*10)));
 	$eco = floor($eco);
 	if ($eco < 2){
 	$eco == 2;
