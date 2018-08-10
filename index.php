@@ -113,7 +113,7 @@ var x = setInterval(function() {
     + minutes + "m " + seconds + "s ";
     
     // If the count down is over, write some text 
-    if (distance >= 10) {
+    if (distance >= 15) {
         clearInterval(x);
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
