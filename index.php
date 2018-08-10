@@ -103,19 +103,28 @@ var x = setInterval(function() {
     var distance = now - startpoint;
     
     // Time calculations for days, hours, minutes and seconds
+    var yeartimer = Math.floor((distance % 10));
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
+    document.getElementById("demo").innerHTML = "Year: " + yeartimer;
+    //days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     
     // If the count down is over, write some text 
-    if (distance >= 15) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+    if (seconds == 0) {
+        document.getElementById("demo2").innerHTML = "EXPIRED";
+    }
+    if (seconds == 1) {
+        document.getElementById("demo2").innerHTML = "NOPE";
+    }
+    if (seconds == 30) {
+        document.getElementById("demo2").innerHTML = "EXPIRED";
+    }
+    if (seconds == 31) {
+        document.getElementById("demo2").innerHTML = "NOPE";
     }
 }, 1000);
 </script>
