@@ -30,7 +30,7 @@
 	}
 	$_SESSION["eco"] = $eco;
   
-	$tech = $tech + (sqrt($eco/10));
+	$tech = $tech + (sqrt($eco/(10-$civpointtech)));
 	$tech = floor($tech);
 	$_SESSION["tech"] = $tech;
 
