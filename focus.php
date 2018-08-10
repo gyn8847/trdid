@@ -23,7 +23,7 @@
 	$mil = floor($mil);
 	$_SESSION["mil"] = $mil;
   
-	$eco = $eco + rand(1,(4+($civpointeco))) - ($pop / (5000+($tech*10)));
+	$eco = $eco + rand(0,(4+($civpointeco/2))) - ($pop / (5000+($tech*10)));
 	$eco = floor($eco);
 	if ($eco < 2){
 	$eco == 2;
@@ -34,47 +34,47 @@
 	$tech = floor($tech);
 	$_SESSION["tech"] = $tech;
 
-	if($tech >= 50000){
+	if($tech >= 150000){
 	$techstate = $_SESSION["techstate"];
 	$techstate = "Futuristic Age";
 	$_SESSION["tech"] = $techstate;
 	}
-	elseif($tech >= 25000){
+	elseif($tech >= 50000){
 	$techstate = $_SESSION["techstate"];
 	$techstate = "Space Age";
 	$_SESSION["techstate"] = $techstate;
 	}
-	elseif($tech >= 15000){
+	elseif($tech >= 20000){
 	$techstate = $_SESSION["techstate"];
 	$techstate = "Modern Age";
 	$_SESSION["techstate"] = $techstate;
 	}
-	elseif($tech >= 5000){
+	elseif($tech >= 8000){
 	$techstate = $_SESSION["techstate"];
 	$techstate = "Industrial Age";
 	$_SESSION["techstate"] = $techstate;
 	}
-	elseif($tech >= 2000){
+	elseif($tech >= 3500){
 	$techstate = $_SESSION["techstate"];
 	$techstate = "Exploration Age";
 	$_SESSION["techstate"] = $techstate;
 	}
-	elseif($tech >= 1000){
+	elseif($tech >= 1500){
 	$techstate = $_SESSION["techstate"];
 	$techstate = "Medieval Age";
 	$_SESSION["techstate"] = $techstate;
 	}
-	elseif($tech >= 500){
+	elseif($tech >= 700){
 	$techstate = $_SESSION["techstate"];
 	$techstate = "Iron Age";
 	$_SESSION["techstate"] = $techstate;
 	}
-	elseif($tech >= 200){
+	elseif($tech >= 300){
 	$techstate = $_SESSION["techstate"];
 	$techstate = "Bronze Age";
 	$_SESSION["techstate"] = $techstate;
 	}
-	elseif($tech >= 100){
+	elseif($tech >= 150){
 	$techstate = $_SESSION["techstate"];
 	$techstate = "Copper Age";
 	$_SESSION["techstate"] = $techstate;
