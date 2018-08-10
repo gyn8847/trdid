@@ -4,7 +4,7 @@
   $civpointeco = $_SESSION["civpointeco"];
   $civpoints = $_SESSION["civpoints"];
   if($civpointeco >= 1){
-  $civpointpop--;
+  $civpointeco--;
   $civpoints++;
   }
   $_SESSION["civpointeco"] = $civpointeco;
