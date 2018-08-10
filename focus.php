@@ -23,14 +23,14 @@
 	$mil = floor($mil);
 	$_SESSION["mil"] = $mil;
   
-	$eco = $eco + $tech + rand(1,(4+($civpointeco))) - ($pop / 5000);
+	$eco = $eco + $tech + rand(1,(4+($civpointeco))) - ($pop / (5000+($tech*10)));
 	$eco = floor($eco);
 	if ($eco < 2){
 	$eco == 2;
 	}
 	$_SESSION["eco"] = $eco;
   
-	$tech = $tech + ($eco / 50);
+	$tech = $tech + (sqrt($eco/10));
 	$tech = floor($tech);
 	$_SESSION["tech"] = $tech;
 
