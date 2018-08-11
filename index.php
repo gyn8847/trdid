@@ -55,6 +55,8 @@
 <html>
 <head>
 <title>NationSim1998</title>
+<script type="text/javascript" src="xhr.js"></script>
+<script type="text/javascript" src="simple.js"> </script>
 </head>
 <body>
 <?php
