@@ -117,16 +117,20 @@ var x = setInterval(function() {
     
     // If the count down is over, write some text 
     if (seasontimer == 0) {
-        document.getElementById("demo2").innerHTML = "Winter";
+        document.getElementById("demo2").innerHTML = "It is currently Spring";
+	window.location="focus.php";
     }
     if (seasontimer == 1) {
-        document.getElementById("demo2").innerHTML = "Spring";
+        document.getElementById("demo2").innerHTML = "It is currently Summer";
+	window.location="focus.php";
     }
     if (seasontimer == 2) {
-        document.getElementById("demo2").innerHTML = "Summer";
+        document.getElementById("demo2").innerHTML = "It is currently Autumn";
+	window.location="focus.php";
     }
     if (seasontimer == 3) {
-        document.getElementById("demo2").innerHTML = "Autumn";
+        document.getElementById("demo2").innerHTML = "It is currently Winter";
+	window.location="focus.php";
     }
 }, 1000);
 </script>
