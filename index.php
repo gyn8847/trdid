@@ -111,7 +111,7 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = "Year: " + yeartimer;
+    document.getElementById("demo").innerHTML = "It is " + seasontimer + "Year: " + yeartimer;
     //days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     
     // If the count down is over, write some text 
