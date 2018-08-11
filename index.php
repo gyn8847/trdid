@@ -88,6 +88,7 @@
 </br></br></br><p><a href="newgame.php">Restart</a></p>
 
 <p id="demo"></p>
+<p id="demo2"></p>
 
 <script>
 // Set the date we're counting down to
@@ -111,7 +112,7 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = "It is " + seasontimer + "Year: " + yeartimer;
+    document.getElementById("demo").innerHTML = "Year: " + yeartimer;
     //days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     
     // If the count down is over, write some text 
