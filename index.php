@@ -103,7 +103,8 @@ var x = setInterval(function() {
     var distance = now - startpoint;
     
     // Time calculations for days, hours, minutes and seconds
-    var yeartimer = Math.floor((distance / 10000));
+    var yeartimer = Math.floor((distance / (1000 * 60 * 16)));
+    var seasontimer = Math.floor((distance % (1000 * 60 * 16) / (1000 * 60 * 4)));
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -114,17 +115,17 @@ var x = setInterval(function() {
     //days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     
     // If the count down is over, write some text 
-    if (seconds == 0) {
-        document.getElementById("demo2").innerHTML = "EXPIRED";
+    if (seasontimer == 0) {
+        document.getElementById("demo2").innerHTML = "Winter";
     }
-    if (seconds == 1) {
-        document.getElementById("demo2").innerHTML = "NOPE";
+    if (seasontimer == 1) {
+        document.getElementById("demo2").innerHTML = "Spring";
     }
-    if (seconds == 30) {
-        document.getElementById("demo2").innerHTML = "EXPIRED";
+    if (seasontimer == 2) {
+        document.getElementById("demo2").innerHTML = "Summer";
     }
-    if (seconds == 31) {
-        document.getElementById("demo2").innerHTML = "NOPE";
+    if (seasontimer == 3) {
+        document.getElementById("demo2").innerHTML = "Autumn";
     }
 }, 1000);
 </script>
