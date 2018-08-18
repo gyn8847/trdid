@@ -87,6 +87,8 @@
 	$techstate = "Prehistoric Age";
 	$_GET["techstate"] = $techstate;
 	}
-  
+  	
+	ECHO ($pop." : ".$eco)
+
 	//header("location:index.php");
 ?>
