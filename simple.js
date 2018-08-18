@@ -2,8 +2,15 @@
 var xhr = createRequest();
 function getData(dataSource, divID, aName, aPwd)  {
     if(xhr) {
+	    
+	    getData('focus.php','targetDiv', year.value, pop.value, mil.value, eco.value, tech.value, civpoints.value, civpointpop.value, 
+		    civpointmil.value, civpointeco.value, civpointtech.value, techstate.value, event.value) ,1000);
+	    
 	    var place = document.getElementById(divID);
-	    var url = dataSource+"?name="+aName+"&pwd="+aPwd;
+	    var url = dataSource+"?year="+aYear+"?pop="+aPop+"?mil="+aMil+"?eco="+aEco
+	    +"?tech="+aTech+"?civpoints="+aCivpoints+"?civpointpop="+aCivpointpop
+	    +"?civpointmil="+aCivpointmil+"?civpointeco="+aCivpointeco
+	    +"?civpointtech="+aCivpointtech+"?techstate="+aTechstate+"?event="+aEvent;
 	    xhr.open("GET", url, true);
 	    xhr.onreadystatechange = function() {
 		    alert(xhr.readyState);
