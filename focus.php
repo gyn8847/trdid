@@ -1,6 +1,4 @@
 <?php
-	session_start();
-  
 	$year = $_GET["year"];
 	$pop = $_GET["pop"];
 	$mil = $_GET["mil"];
