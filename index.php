@@ -59,6 +59,9 @@
 <script type="text/javascript" src="simple.js"> </script>
 </head>
 <body>
+<div id="targetDiv"> 
+	<p>The fetched data will go here.</p>  
+</div>
 <?php
    echo "<p>The year is: $year</p></br>";
    echo "<p>$event</p></br>";
